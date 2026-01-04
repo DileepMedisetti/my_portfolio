@@ -1,137 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dileep medisetti | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohan Dileep Medisetti | Full Stack Developer</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome (Using CDN for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
+  <!-- Header / Navigation -->
   <header>
     <div class="container">
-      <h1>Mohan Dileep Medisetti</h1>
+      <a href="#" class="logo">Dileep Medisetti<span>.</span></a>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#resume">Resume</a>
+        <ul class="nav-menu" id="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section id="home" class="section home">
-  <div class="container home-content">
-    <h2>Enthusiastic Java Full Stack Developer</h2>
-    <img src="IMG_20251211_130738.jpg" alt="Photo" class="profile-img">
-    <div>
-      <h2>Hi, I'm <span>Mohan Dileep Medisetti</span></h2>
-      <p>A Final-year student at BVCEC College, Odalarevu, pursuing a degree in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning (AIML).</p>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="section">
+  <!-- Hero Section -->
+  <section id="home" class="hero">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a passionate and self-motivated B.Tech student specializing in Artificial Intelligence and Machine Learning. I enjoy building real-world projects that combine intelligent systems with clean, user-friendly interfaces. From machine learning models to web applications, I love turning ideas into working solutions.
-
-Over time, I've developed skills in Both Frontend and Backend Web technologies to stay ahead in full-stack development. My goal is to use technology to solve meaningful problems, and I’m always eager to learn and grow in the world of tech.</p>
-    </div>
-</section>
-
-  <section id="education" class="section">
-    <div class="container">
-      <h2>Education</h2>
-      <ul class="list">
-        <li><strong>B.Tech in AIML</strong> - Bonam Venkata Chalamayya Engineering College (2022–2026)</li>
-        <li><strong>Intermediate (MPC)</strong> - Sri Chaitanya Junior College (2020–2022)</li>
-        <li><strong>SSC</strong> - Geetham High School (2019–2020)</li>
-      </ul>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle">Hello, I'm</p>
+          <h1 class="hero-title">Mohan Dileep<br><span>Medisetti</span></h1>
+          <p class="hero-description">
+            Enthusiastic Java Full Stack Developer & AIML Specialist.
+            I build modern web applications and intelligent systems that solve real-world problems.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Work</a>
+            <a href="My_Resume.pdf" target="_blank" class="btn btn-outline">My Resume</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="IMG_20251211_130738.jpg" alt="Mohan Dileep Medisetti" class="profile-img">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="skills" class="section">
+  <!-- About Section -->
+  <section id="about" class="section">
     <div class="container">
-      <h2>Technical Skills</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Spring boot</li>
-        <li>RESTful APIs</li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-        <li>AWS Cloud (EC2, S3, IAM – Basics)</li>
-        <li>Postman (API testing)</li>
-        <li>Data Science</li>
-        <li>Machine Learning</li>
-        <li>Deep Learning</li>
-        <li>NLP</li>
-        <li>Computer vision</li>
-      </ul>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Unlocking Potential Through Code</h3>
+          <p>
+            I’m a passionate and self-motivated Final-year B.Tech student at BVCEC College, specializing in Artificial
+            Intelligence and Machine Learning (AIML).
+          </p>
+          <p>
+            I enjoy building real-world projects that combine intelligent systems with clean, user-friendly interfaces.
+            From machine learning models to web applications, I love turning ideas into working solutions.
+          </p>
+          <p>
+            Over time, I've developed skills in both Frontend and Backend Web technologies to stay ahead in full-stack
+            development. My goal is to use technology to solve meaningful problems, and I’m always eager to learn and
+            grow in the world of tech.
+          </p>
+        </div>
+        <!-- You could add a visual element here, or just keep it text focused for now, or move education here -->
+        <div class="about-stats" style="text-align: center;">
+          <!-- Placeholder for additional visual or stats if needed, currently empty to keep layout balanced/clean -->
+          <i class="fas fa-code" style="font-size: 10rem; color: var(--bg-card); opacity: 0.5;"></i>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-container">
+        <!-- Programming Languages -->
+        <div class="skill-tag"><i class="fab fa-java"></i> Java</div>
+        <div class="skill-tag"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-tag"><i class="fab fa-js"></i> JavaScript</div>
+
+        <!-- Frontend -->
+        <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="skill-tag"><i class="fab fa-react"></i> React</div>
+
+        <!-- Backend & DB -->
+        <div class="skill-tag"><i class="fas fa-leaf"></i> Spring Boot</div>
+        <div class="skill-tag"><i class="fas fa-database"></i> MySQL</div>
+        <div class="skill-tag"><i class="fas fa-database"></i> MongoDB</div>
+        <div class="skill-tag"><i class="fas fa-server"></i> RESTful APIs</div>
+
+        <!-- Cloud & Tools -->
+        <div class="skill-tag"><i class="fab fa-aws"></i> AWS (Basics)</div>
+        <div class="skill-tag"><i class="fab fa-docker"></i> Docker</div>
+        <div class="skill-tag"><i class="fas fa-rocket"></i> Postman</div>
+
+        <!-- AI/ML -->
+        <div class="skill-tag"><i class="fas fa-brain"></i> Machine Learning</div>
+        <div class="skill-tag"><i class="fas fa-network-wired"></i> Deep Learning</div>
+        <div class="skill-tag"><i class="fas fa-language"></i> NLP</div>
+        <div class="skill-tag"><i class="fas fa-eye"></i> Computer Vision</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
 
-      <div class="project-card">
-        <h3>Coconut Trading Website</h3>
-        <p>Developed a responsive and visually appealing website for a coconut trading business.
-The website showcases products, business details, and contact information in a simple and user-friendly layout.</p>
-      </div>
+        <div class="project-card">
+          <h3><i class="fas fa-university"></i> Mini Online Banking System</h3>
+          <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;">
+            <li>Developed a secure role-based access system with separate functionalities for users and administrators.
+            </li>
+            <li>Implemented PIN-based authentication, auto-generated account numbers, and real-world banking rules
+              (transaction limits, balance caps).</li>
+            <li>Designed an Admin Dashboard to monitor users, manage account activation/deactivation, and perform
+              advanced filtering.</li>
+          </ul>
+        </div>
 
-      <div class="project-card">
-        <h3>Real-Time Object Detection System</h3>
-        <p>Developed a real-time object detection system capable of identifying multiple objects from live camera feed with high accuracy. The system uses deep learning–based detection models and processes video frames instantly for real-world applications.</p>
-      </div>
-      
-      <div class="project-card">
-        <h3>Student Management System</h3>
-        <p>Developed a full-stack Student Management System that performs complete CRUD operations (Create, Read, Update, Delete) using React on the frontend and Spring boot on the backend.
-The system helps administrators and teachers manage student records efficiently through a clean and responsive UI.</p>
-      </div>
+        <div class="project-card">
+          <h3><i class="fas fa-eye"></i> Real-Time Object Detection System</h3>
+          <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;">
+            <li>Developed a real-time system identifying and tracking multiple objects from live camera feeds with high
+              accuracy and low latency.</li>
+            <li>Implemented optimized data preprocessing and inference pipelines to ensure smooth performance for
+              real-time video streams.</li>
+            <li>Designed an interactive visualization interface that displays detected objects with bounding boxes,
+              labels, and confidence scores.</li>
+          </ul>
+        </div>
 
-      <div class="project-card">
-        <h3>Online Banking System</h3>
-        <p>Developed a simple online banking system that allows users to manage bank accounts and perform basic transactions.
-The application is built using a React frontend, Spring Boot REST API, and MySQL database, following a clean and modular full-stack architecture.</p>
+        <div class="project-card">
+          <h3><i class="fas fa-store"></i> Coconut Trading Website</h3>
+          <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;">
+            <li>Built a B2B commodity trading platform simulating real-world workflows with structured product listings.
+            </li>
+            <li>Managed backend processes to handle inventory data and customer inquiries securely while ensuring data
+              consistency.</li>
+            <li>Created a visually appealing, responsive interface for showcasing products and business details.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3><i class="fas fa-briefcase"></i> Recruitment & Placement System</h3>
+          <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;">
+            <li>Developed a centralized system to streamline student registration, company onboarding, and application
+              tracking.</li>
+            <li>Implemented secure authentication and role-based access for administrators, companies, and students.
+            </li>
+            <li>Designed administrative dashboards to approve companies, monitor recruitment, and manage job postings
+              efficiently.</li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3><i class="fas fa-users-cog"></i> Internal Mobility & Talent Engine</h3>
+          <ul style="list-style: disc; padding-left: 20px; color: var(--text-secondary); margin-bottom: 20px;">
+            <li>Built an intelligent internal mobility system that analyzes employee skills, experience, and career
+              preferences to match them with suitable internal job opportunities.</li>
+            <li>Implemented automated talent matching logic to reduce hiring time, improve employee retention, and
+              promote effective utilization of existing workforce skills.</li>
+            <li>Designed dashboards and recommendation workflows that provide HR teams and employees with clear insights
+              into role fit, skill gaps, and career growth paths.</li>
+          </ul>
+        </div>
+
       </div>
-      
+      <div style="text-align: center; margin-top: 40px;">
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">Check out my resume for more details and other
+          projects.</p>
+        <a href="My_Resume.pdf" target="_blank" class="btn btn-primary"><i class="fas fa-file-pdf"></i> View Full
+          Resume</a>
+      </div>
     </div>
   </section>
 
+  <!-- Education Section -->
+  <section id="education" class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-degree">B.Tech in AIML</div>
+          <div class="timeline-institution">Bonam Venkata Chalamayya Engineering College</div>
+          <div class="timeline-year">2022 – 2026</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-degree">Intermediate (MPC)</div>
+          <div class="timeline-institution">Sri Chaitanya Junior College</div>
+          <div class="timeline-year">2020 – 2022</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-degree">Secondary School Certificate</div>
+          <div class="timeline-institution">Geetham High School</div>
+          <div class="timeline-year">2019 – 2020</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: dileepmedisetti1@gmail.com</p>
-      <p>Phone: +91-8309788074</p>
-      <p>LinkedIn: <a href="#">https://www.linkedin.com/in/dileepmedisetti167 </a></p>
-      <p>GitHub: <a href="#">https://github.com/DileepMedisetti</a></p>
-      
-  </section>
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-container">
+        <p style="font-size: 1.2rem; max-width: 600px; color: var(--text-secondary);">
+          I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my
+          best to get back to you!
+        </p>
 
-  <section id="resume" class="section">
-    <div class="container">
-      <h2>Resume</h2><br>
-      <a href="My_Resume.pdf" target="_blank" class="resume-btn">View Resume</a><br><br>
-      <a href="My_Resume.pdf" download class="resume-btn">Download Resume</a>
+        <a href="mailto:dileepmedisetti1@gmail.com" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Say Hello
+        </a>
+
+        <div class="social-links">
+          <a href="mailto:dileepmedisetti1@gmail.com" class="social-icon" title="Email"><i
+              class="fas fa-envelope"></i></a>
+          <a href="tel:+918309788074" class="social-icon" title="Phone"><i class="fas fa-phone"></i></a>
+          <a href="https://www.linkedin.com/in/dileepmedisetti167" target="_blank" class="social-icon"
+            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/DileepMedisetti" target="_blank" class="social-icon" title="GitHub"><i
+              class="fab fa-github"></i></a>
+        </div>
+      </div>
     </div>
-
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Mohan Dileep Medisetti. All Rights Reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Mohan Dileep Medisetti. All Rights Reserved.</p>
+    </div>
   </footer>
 
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const menuToggle = document.getElementById('mobile-menu');
+    const navList = document.getElementById('nav-list');
+
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
+
 </html>
